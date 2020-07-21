@@ -1,10 +1,7 @@
 import React, {Component} from 'react';
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
-import Button from 'react-bootstrap/Button';
 import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
-import Image from 'react-bootstrap/Image';
 import Container from 'react-bootstrap/Container';
 import CardCreate from './CardParts/CardCreate.jsx';
 import Footer from './Footer/Footer';
@@ -22,14 +19,9 @@ class Chirper extends Component{
     }
  addNewChriperPg = () => {
       this.setState({ addNewChirper: true  });
-     let activeElement = document.getElementsByClassName("active");
-    
-    
  }
  renderChriperPg = () => {
-      this.setState({ addNewChirper: false  });
-          let activeElement = document.getElementsByClassName("active");
-     
+      this.setState({ addNewChirper: false  }); 
  }
   componentDidMount() {
     window.addEventListener('load', (e) => {
@@ -43,16 +35,10 @@ class Chirper extends Component{
     
 render(){
     
-
-    let newChirp = false;
-    let countNew = 0;
-     let count = 0;
-    let myRealArr = [];
     let colors = [];
     this.props.color.forEach((color, i) => {
         colors[i] = color;
     })
-    let move = false;
     //handles MouseEnter and MouseOut feature for the small screen menu 
 
     
@@ -69,49 +55,16 @@ render(){
                 return mainelement;
  } ;
  
-//Synchronizes nav link highlighting between corresponsing links in the small and larger menus 
-let handleMainNavClickEvent = (mainElement, classElement) => {
-   
-     let activeElement = document.getElementsByClassName("active");
-  
-   
 
-console.log(activeElement[0]);
-for(let m = 0; m < activeElement.length; m++){
-    activeElement[0].classList.remove("active");
-}
-
-       
- 
-    mainElement.classList.add("active");
-    classElement.classList.add("active");
-
-    
-}
     
 
     
-     //Handles Mouse Down Events 
-let handleMouseDownEvent = (mainElement, classElement, myClass) => {
-   
-     let activeElement = document.getElementsByClassName("active");
-   console.log(activeElement[0]);
 
-for(let m = 0; m < activeElement.length; m++){
-    activeElement[0].classList.remove("active");
-}
-   
-    
-  mainElement.classList.add("active");
-    classElement.classList.add("active");
- 
-
-}
     
 return (
 <React.Fragment>
 <Navbar   collapseOnSelect  expand="md" bg="dark" variant="dark" fixed="top">
-    <Navbar.Brand >{this.props.name} <Image src="https://image.flaticon.com/icons/svg/2849/2849829.svg" className=" bg-white ml-2 border border-white rounded" width={"25"} fluid /></Navbar.Brand>
+    <Navbar.Brand >{this.props.name}</Navbar.Brand>
     <Navbar.Toggle   onClick={(e) => {
                 let elem = document.getElementsByClassName("navbar-toggler")[1];
                 let x = document.createTextNode("×");

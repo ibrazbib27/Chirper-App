@@ -1,12 +1,7 @@
 import React, {Component} from 'react';
 import InputCard from './InputCard';
 import OutputCard from './OutputCard';
-
-import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
-import Image from 'react-bootstrap/Image';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
 import InputGroup from 'react-bootstrap/InputGroup';
 import FormControl from 'react-bootstrap/FormControl';
 import Figure from 'react-bootstrap/Figure';

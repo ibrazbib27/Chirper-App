@@ -1,7 +1,6 @@
 import React, {Component} from 'react';
 import Col from 'react-bootstrap/Col';
 import Figure from 'react-bootstrap/Figure';
-import FigureImage from 'react-bootstrap/FigureImage';
 
 class ChirperImg extends Component{
     constructor(){

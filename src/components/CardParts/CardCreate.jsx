@@ -1,10 +1,7 @@
 import React, {Component} from 'react';
 import InputCard from './InputCard';
 import OutputCard from './OutputCard';
-import Card from 'react-bootstrap/Card';
-import Image from 'react-bootstrap/Image';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
+
 
 
 

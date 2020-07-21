@@ -1,13 +1,9 @@
 import React from 'react';
-import HeaderInput from './Header/HeaderInput';
 import HeaderOutput from './Header/HeaderOutput';
 import EditTimeline from './../Modal/EditTimeline';
-import MsgInput from './Message/MsgInput';
 import MsgOutput from './Message/MsgOutput';
 import ImageSection from './Image/ImageSection';
 import Card from 'react-bootstrap/Card';
-import Image from 'react-bootstrap/Image';
-import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
 
