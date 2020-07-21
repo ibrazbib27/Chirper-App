@@ -49,16 +49,12 @@ updateCard(id, header, img, msg, update){
    
         this.setState({cardDetails: [...this.state.cardDetails] });
         
-        console.log(this.state.cardDetails);
     }
     else{
-            
-
         arr.splice(place, 1);
         console.log(arr);
          this.state.cardDetails = [...arr];
         this.setState({cardDetails: [...this.state.cardDetails] });
-         console.log(this.state.cardDetails);
     }
    
 }
