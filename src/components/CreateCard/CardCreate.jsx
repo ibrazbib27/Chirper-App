@@ -1,14 +1,8 @@
 import React, {Component} from 'react';
-import InputCard from './InputCard';
-import OutputCard from './OutputCard';
-import Button from 'react-bootstrap/Button';
-import InputGroup from 'react-bootstrap/InputGroup';
-import FormControl from 'react-bootstrap/FormControl';
-import Figure from 'react-bootstrap/Figure';
-import FigureImage from 'react-bootstrap/FigureImage';
-import Tooltip from 'react-bootstrap/Tooltip';
-import Overlay from 'react-bootstrap/Overlay';
-import OverlayTrigger from 'react-bootstrap/OverlayTrigger';
+import InputCard from './CardParts/InputCard';
+import OutputCard from './CardParts/OutputCard';
+
+
 
 
 let count = 2;
@@ -46,13 +40,10 @@ updateCard(id, header, img, msg, update){
          arr[place].img = img.src;
         arr[place].message = msg.value;
          this.state.cardDetails = [...arr];
-   
         this.setState({cardDetails: [...this.state.cardDetails] });
-        
     }
     else{
         arr.splice(place, 1);
-        console.log(arr);
          this.state.cardDetails = [...arr];
         this.setState({cardDetails: [...this.state.cardDetails] });
     }
@@ -78,33 +69,20 @@ count++;
 document.getElementsByTagName("img")[0].src = this.state.link;
 document.getElementById("textarea").value = "";
 document.body.style.cursor = "default";
- }, 1000);
 
-
-
-
-
+      }, 1000);
 
 
  }
 render(){
   
-
-
  
-return(
-    
+return(  
    <React.Fragment>
-  
-      
+
         {this.props.newCard ? <InputCard func={this.handleClick} link={this.state.link} myId={this.state.cardDetails}/> : <OutputCard func={this.updateCard} cards={this.state.cardDetails} />} 
         
     </React.Fragment>
-  
-     
-   
-    
-
 );
 }
 }

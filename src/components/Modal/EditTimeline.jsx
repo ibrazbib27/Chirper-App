@@ -3,10 +3,10 @@ import Modal from 'react-bootstrap/Modal';
 import Button from 'react-bootstrap/Button';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import InputField from './../CardParts/Header/InputField/InputField';
-import MsgInput from './../CardParts/Message/MsgInput';
-import ImageSection from './../CardParts/Image/ImageSection';
-import UpdateChirpButtons from './../CardParts/Buttons/UpdateChirpButtons';
+import InputField from './../CreateCard/CardParts/Header/InputField/InputField';
+import MsgInput from './../CreateCard/CardParts/Message/MsgInput';
+import ImageSection from './../CreateCard/CardParts/Image/ImageSection';
+import UpdateChirpButtons from './../CreateCard/CardParts/Buttons/UpdateChirpButtons';
 
 const EditTimeline = (props) => {
   const [show, setShow] = useState(false);

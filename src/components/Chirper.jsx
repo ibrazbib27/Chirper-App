@@ -3,7 +3,7 @@ import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
 import Row from 'react-bootstrap/Row';
 import Container from 'react-bootstrap/Container';
-import CardCreate from './CardParts/CardCreate.jsx';
+import CardCreate from './CreateCard/CardCreate.jsx';
 import Footer from './Footer/Footer';
 
 

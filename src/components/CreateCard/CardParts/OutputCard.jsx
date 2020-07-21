@@ -1,6 +1,6 @@
 import React from 'react';
 import HeaderOutput from './Header/HeaderOutput';
-import EditTimeline from './../Modal/EditTimeline';
+import EditTimeline from './../../Modal/EditTimeline';
 import MsgOutput from './Message/MsgOutput';
 import ImageSection from './Image/ImageSection';
 import Card from 'react-bootstrap/Card';
