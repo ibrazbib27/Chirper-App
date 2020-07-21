@@ -7,7 +7,7 @@ const UpdateChirpButtons = (props) => {
 
  
 return(
-<Row className="w-100  justify-content-around p-0">
+<Row className="w-100  justify-content-between p-0">
     <Col xs={12} md={5} className="order-2 order-md-0 p-0">
         <Button className="w-100 px-2 px-md-0" variant="danger"  onClick={()=>{
                 props.func(false);
