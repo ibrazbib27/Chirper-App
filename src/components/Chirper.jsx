@@ -150,7 +150,7 @@ class Chirper extends Component {
             </Nav>
           </Navbar.Collapse>
         </Navbar>
-        <Container fluid>
+        <Container fluid className="px-0">
           <Row className="row p-3 my-5">
             {this.state.addNewChirper ? (
               <CardCreate newCard={true} />
